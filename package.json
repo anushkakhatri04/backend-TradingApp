@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "postinstall": "npm rebuild bcrypt --build-from-source"
   },
   "author": "rohit jargaal",
   "license": "ISC",
@@ -12,7 +13,6 @@
     "nodemon": "^3.1.7"
   },
   "dependencies": {
-    "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.3",
     "connect": "^3.7.0",
